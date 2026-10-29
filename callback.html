@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="style.css"><title>Connected – Trang Tai Chinh Studio</title></head><body><main>
+<header><img src="icon.png" alt=""><h1>Kết nối TikTok</h1></header>
+<p id="m">Đang xử lý…</p>
+<script>
+const p=new URLSearchParams(location.search), c=p.get('code');
+document.getElementById('m').innerHTML = c
+ ? 'Đã đăng nhập. Sao chép mã dưới đây và dán vào TikTok Lab trên máy của bạn:<br><textarea style="width:100%;height:90px" readonly>'+c.replace(/[<>&"]/g,'')+'</textarea>'
+ : 'Không nhận được mã đăng nhập. Hãy thử lại từ TikTok Lab.';
+</script>
+<footer>Trang Tai Chinh Studio · Contact: via TikTok @trangtaichinhups · Last updated: October 29, 2026</footer></main></body></html>
